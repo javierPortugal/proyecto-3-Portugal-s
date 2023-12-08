@@ -14,6 +14,7 @@ form.addEventListener('submit', (e) => {
     callAPI(nameCity.value, nameCountry.value);
     //console.log(nameCity.value);
     //console.log(nameCountry.value);
+    //repo5
 })
 
 function callAPI(city, country){
