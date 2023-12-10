@@ -28,6 +28,7 @@ function callAPI(city, country){
             
         })
         .then(dataJSON => {
+           //console.log(dataJSON);
             if (dataJSON.cod === '404') {
                 showError('Ciudad no encontrada...');
             } else {
@@ -59,15 +60,15 @@ function showWeather(data){
 
     result.appendChild(content);
 
-    /* console.log(name);
+    console.log(name);
     console.log(temp);
     console.log(temp_max);
     console.log(temp_min);
-    console.log(arr.icon); */
+    console.log(arr.icon);
 }
 
 function showError(message){
-    //console.log(message);
+    console.log(message);
     const alert = document.createElement('p');
     alert.classList.add('alert-message');
     alert.innerHTML = message;
