@@ -12,9 +12,9 @@ form.addEventListener('submit', (e) => {
     }
 
     callAPI(nameCity.value, nameCountry.value);
-    //console.log(nameCity.value);
-    //console.log(nameCountry.value);
-    //repo5
+    console.log(nameCity.value);
+    console.log(nameCountry.value);
+    
 })
 
 function callAPI(city, country){
@@ -23,7 +23,9 @@ function callAPI(city, country){
 
     fetch(url)
         .then(data => {
+           console.log(data); 
             return data.json();
+            
         })
         .then(dataJSON => {
             if (dataJSON.cod === '404') {
