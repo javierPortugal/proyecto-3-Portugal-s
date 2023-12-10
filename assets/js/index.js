@@ -34,7 +34,7 @@ function callAPI(city, country){
                 clearHTML();
                 showWeather(dataJSON);
             }
-            //console.log(dataJSON);
+            console.log(dataJSON);
         })
         .catch(error => {
             console.log(error);
